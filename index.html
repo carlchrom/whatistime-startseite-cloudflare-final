@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080808"><title>WhatIsTime</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;background:#080808}body{min-height:100svh;display:grid;place-items:center;overflow:hidden}.scene{position:relative;width:min(100vw,calc(100svh * 1672 / 941));height:min(100svh,calc(100vw * 941 / 1672));overflow:hidden;background:#080808}.scene>img{display:block;width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.pillar{position:absolute;display:grid;place-items:center;color:#fff;text-decoration:none;font:500 clamp(10px,1.35vw,21px)/1 Arial,Helvetica,sans-serif;letter-spacing:.22em;text-shadow:0 2px 12px #000,0 1px 3px #000;opacity:0;transition:opacity .25s ease;outline:none;-webkit-tap-highlight-color:transparent}.pillar::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.14);opacity:0;transition:opacity .25s ease;pointer-events:none}.pillar span{position:relative;z-index:1}.pillar:hover,.pillar:focus-visible{opacity:1}.pillar:hover::before,.pillar:focus-visible::before{opacity:1}
+.gastro{left:7.45%;top:0;width:17.25%;height:84%;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}.immo{left:38.1%;top:28.6%;width:10.35%;height:46%;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}.insta{left:52.7%;top:39.5%;width:8.5%;height:31%;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.contact{left:60.8%;top:43%;width:7.8%;height:27%;font-size:clamp(8px,.8vw,13px);letter-spacing:.12em}
+.clock{position:absolute;left:81.7%;top:51.5%;width:3.7%;aspect-ratio:1;border-radius:50%;opacity:0;transition:opacity .25s ease,box-shadow .25s ease;background:rgba(255,255,255,.12);box-shadow:0 0 0 0 rgba(255,255,255,0)}.clock:hover,.clock:focus-visible{opacity:1;box-shadow:0 0 0 9px rgba(255,255,255,.13),0 0 24px rgba(255,255,255,.35);outline:none}
+@media(hover:none){.pillar,.clock{opacity:1}.pillar span{padding:7px 9px;background:rgba(0,0,0,.58);border:1px solid rgba(255,255,255,.55)}}@media(prefers-reduced-motion:reduce){.pillar,.pillar::before,.clock{transition:none}}
+</style></head><body><main class="scene" aria-label="WhatIsTime"><img src="assets/garage.png" alt="">
+<a class="pillar gastro" href="https://whatistime.space/gastro" aria-label="Gastro"><span>GASTRO</span></a>
+<a class="pillar immo" href="https://whatistime.space/immo" aria-label="Immo"><span>IMMO</span></a>
+<a class="pillar insta" href="https://whatistime.space/insta" aria-label="Insta"><span>INSTA</span></a>
+<a class="pillar contact" href="/kontakt/" aria-label="Contact"><span>CONTACT</span></a>
+<a class="clock" href="/space/" aria-label="Space"></a>
+</main></body></html>
